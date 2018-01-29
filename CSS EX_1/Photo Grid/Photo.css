@@ -1,4 +1,6 @@
-
+body{
+  font-family: 'Lato', sans-serif;
+}
 img{
   width: 30%;
   float:left;
@@ -8,5 +10,3 @@ img{
     border-bottom: 2px solid grey;
     width: 30%;
   }
-
-  

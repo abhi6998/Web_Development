@@ -1,0 +1,104 @@
+body
+{
+  font-family: "Montserrat", "Avenir";
+  margin: 0;
+  padding: 0;
+  /* took this from uigradients.com...A wonderfull site for gradients */
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* the main div which contains the whole list */
+.container
+{
+    box-shadow: 0 0 3px rgba(0, 0, 0,0.1);
+    margin:100px auto;
+    max-width:600px;
+    min-width:50%;
+    background-color:#F5F5F5;
+}
+
+/* this is for setting h1 attributes */
+h1
+{
+  background-color: #4FC3F7;
+  color:#FFFFFF;
+  text-transform: uppercase;
+  margin:0px;
+  font-weight: bold;
+  padding: 10px;
+  font-size:100%;
+}
+/* this class is for plus icon to set its attributes */
+  .fa-plus-circle
+  {
+    float: right;
+    font-size: 23px;
+  }
+
+/* this sets the properties of the add new note textbox */
+input
+{
+    margin: 0 auto;
+    padding: 15px;
+    border:none;
+    height:35px;
+    font-size: 100%;
+    background-color:#F5F5F5;
+    color:black;
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+input:focus
+  {
+    border:1px solid #03A9F4;
+    outline:none;
+    background-color: white;
+  }
+
+/* setting ul properties */
+ul
+{
+  padding: 0px;
+  margin: 0;
+}
+/* the class used for toggling on and on the completed listy items in jQuery */
+.done{
+  text-decoration: line-through;
+  color:grey;
+}
+/* setting li i.e the list items properties */
+li{
+  padding:10px 5px;
+  margin:0px;
+  height: 15px;
+  list-style-type: none;
+  background-color: white;
+  font-size:100%;
+
+}
+li:nth-child(2n){
+  background-color:#F5F5F5;
+}
+
+/* this sets the SPAN INSIDE LI and its hover are to apply animation and other properties to the delete button */
+li span
+{
+  margin:0 5px 0 0;
+  height:100%;
+  padding: 0px;
+  text-align:center;
+  color:;
+  width:0;
+  display:inline-block;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+li:hover span
+{
+  width:40px;
+  opacity: 1;
+}
